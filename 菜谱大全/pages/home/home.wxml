@@ -1,0 +1,39 @@
+<!--pages/home/home.wxml-->
+<view class="home-page-container">
+<view class="allCook">菜品一览</view>
+ <block wx:for="{{cooklist}}" wx:key="x"> 
+<view class="cookItem" id="{{item.id}}" bindtap="showDetail">
+     
+        <image src="{{item.albums}}" class="cookImage"></image>
+        
+     
+        <view class="cookInfo info">
+        
+            <view class="cookname">
+                 菜名：{{item.title}}
+            </view>
+            <!-- <view class="cookdirectors info">
+                steps:<view wx:for="{{item.steps}}" wx:for-item="steps" wx:key="x">
+                    {{step}}
+                </view> -->
+            <!-- </view> -->
+             <view class="cookcasts info">
+               材料:{{item.ingredients}}
+            </view>
+             <view class="cookimtro ">
+                 介绍：{{item.imtro}}
+            </view>
+        
+        </view>
+</view>
+   </block> 
+</view>
+
+<swiper autoplay duration="1000">
+    <block wx:for="{{swiperImageUrls}}" wx:key="x">
+      <swiper-item>
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+ 

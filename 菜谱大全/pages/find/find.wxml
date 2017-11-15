@@ -1,0 +1,28 @@
+<!--pages/find/find.wxml-->
+<input type="text" placeholder="请输入菜品" bindinput="inputchange" />
+<button bindtap="search">搜索</button>
+<view class="search-page-container">
+<block wx:for="{{item}}" wx:key="x">
+    <view class="cookitem" id="{{item.id}}" bindtap='showDetail'>
+        <image src="{{item.albums}}" class="cookImage"></image>
+      <view class="moviewInfo info ">
+        <view class="moviename mheight">菜名:
+         {{item.title}}
+        </view>
+        <view class="moviedirectors info imtro mheight">
+         <view class='mheight'>标签:</view>
+           {{item.tags}}
+        </view>
+        <view class="moviecasts info mheight">材料:{{item.ingredients}}
+        </view>
+        <view class="moviecasts info mheight imtro">
+        配料: {{item.burden}}
+        </view>
+        <!-- <view class="moviecasts info imtro">
+         <view>介绍:</view> 
+          {{item.imtro}}
+        </view> -->
+      </view>
+    </view>
+</block>
+</view>

@@ -1,0 +1,51 @@
+<!--pages/fdetail/fdetail.wxml-->
+<!--pages/detail/detail.wxml-->
+<view class="detail-page-container">
+  <view class="image-view">
+    <image src="{{albums}}" class="movieimage"></image>
+  </view>
+  <view class="rating">
+    菜名: {{title}}
+  </view>
+  <view class="rating">
+    标签名: {{tags}}
+  </view>
+  <view class="flex-colum">
+    <view>
+      详解:
+    </view>
+      <view>
+        {{imtro}}
+      </view>
+  </view>
+  <view class="flex-colum">
+    <view>
+      材料:
+    </view>
+      <view>
+        {{ingredients}}
+      </view>
+  </view>
+  <view class="flex-colum">
+
+    <view>
+      配料:
+    </view>
+      <view>
+        {{burden}}
+      </view>
+
+  </view>
+  <view style="display:block">制作步骤:</view>
+  <view class="flex-colum">
+    <block wx:for="{{steps}}">
+    <view>
+      {{item.step}}
+     </view>
+     <view>
+     <image src="{{item.img}}" class="castimage"></image>
+     </view>     
+</block>
+</view>
+</view>
+

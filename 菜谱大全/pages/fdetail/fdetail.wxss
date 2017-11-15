@@ -1,0 +1,31 @@
+/* pages/detail/detail.wxss */
+page{
+
+   height: 100%;
+}
+.detail-page-container{
+    height: 100%;
+}
+
+.image-view{
+    height: 500rpx;
+    display: flex;
+
+}
+.movieimage{
+
+    height: 93%;
+    width: 71%;
+    margin: 0 auto;
+}
+
+.flex-colum{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom:10rpx;
+}
+.castimage{
+    flex: 1;
+    height: 230rpx;
+}
+

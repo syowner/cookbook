@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/detail/detail",
+    "pages/intro/intro",
+    "pages/find/find",
+    "pages/fdetail/fdetail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "orange",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"#FFF"
+  },
+  "tabBar": {
+    "color": "#666",
+    "backgroundColor": "#F8F8F8",
+    "selectedColor": " #FF6100",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "菜谱大全",
+        "iconPath": "images/美食菜谱 (2).png",
+        "selectedIconPath": "images/美食菜谱.png"
+      },
+      {
+        "pagePath": "pages/intro/intro",
+        "text": "菜谱推荐",
+        "iconPath": "images/今日菜谱 (2).png",
+        "selectedIconPath": "images/今日菜谱.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "菜谱查询",
+        "iconPath": "images/菜谱分类-01 (2).png",
+        "selectedIconPath": "images/菜谱分类-01.png"
+      }
+    ]
+  }
+}
